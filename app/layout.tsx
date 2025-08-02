@@ -3,10 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 import { type Metadata } from 'next'
-import {
-  ClerkProvider,
-  
-} from '@clerk/nextjs'
+
 
 
 import { Toaster } from "@/Components/ui/sonner"
@@ -30,11 +27,11 @@ export default function RootLayout({
     
       <html lang="en">
         <body className={`${bricolage.variable} antialiased`}>
-        <ClerkProvider>
+        
           
           {children}
             <Toaster /> 
-          </ClerkProvider>
+          
         </body>
       </html>
    
