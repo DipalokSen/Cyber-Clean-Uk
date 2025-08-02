@@ -12,14 +12,17 @@ import {
   UserButton,
 } from '@clerk/nextjs'
 
+
+import { Toaster } from "@/Components/ui/sonner"
+
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Converso",
-  description: "Real-time AI Teaching Platform",
+  title: "Cyber Clean",
+  description: "Protecting Your Digital World",
 };
 
 export default function RootLayout({
@@ -32,8 +35,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${bricolage.variable} antialiased`}>
         <ClerkProvider>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
+            <Toaster /> 
           </ClerkProvider>
         </body>
       </html>

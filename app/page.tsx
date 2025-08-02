@@ -1,15 +1,17 @@
-import CompanionCard from '@/Components/CompanionCard'
-import CompanionList from '@/Components/CompanionList'
-import Cta from '@/Components/Cta'
+
+
+
 import React from 'react'
-import { recentSessions } from '@/constants'
+
+
+import CyberCleanLanding from '@/Components/CyberClanLandingPage'
 
 const Page = () => {
   return (
     <>
-    
-   
-    <main>
+     <CyberCleanLanding/> 
+    {/* <Header/>  */}
+    {/* <main>
   
       <h1>Dashboard</h1>
 
@@ -65,7 +67,7 @@ const Page = () => {
       <section className='home-section'>
        <Cta/>
       </section>
-    </main>
+    </main> */}
      </>
   )
 }

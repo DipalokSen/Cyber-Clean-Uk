@@ -5,13 +5,13 @@ import { createSupabaseClient } from "../supabase"
 export const createCompanion = async(formData:CreateCompanion)=>{
 
 
-    const {userId:Author}=await auth()
+  
     const supabase = createSupabaseClient();
     const {data,error}=await supabase.
-    from('Companion')
-    .insert({...formData, Author})
+    from('users')
+    .insert({...formData})
     .select()
 
-    if(error ||  !data) throw new Error(error.message || "Failed to create companion");
+    if(error ||  !data) throw new Error(error.message);
     return data[0];
 }
