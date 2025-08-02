@@ -1,5 +1,5 @@
 "use server";
-import { auth } from "@clerk/nextjs/server"
+// import { auth } from "@clerk/nextjs/server"
 import { createSupabaseClient } from "../supabase"
 
 export const createCompanion = async(formData:CreateCompanion)=>{
@@ -14,4 +14,4 @@ export const createCompanion = async(formData:CreateCompanion)=>{
 
     if(error ||  !data) throw new Error(error.message);
     return data[0];
-}
+} 
