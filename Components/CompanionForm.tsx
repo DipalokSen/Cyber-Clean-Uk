@@ -59,9 +59,9 @@ const CompanionForm = () => {
 
             if (emailRes.ok) {
                 
-          toast("The Audit Was Requested", {
-  description: "You will recieve our audit report Within 24 hour", 
-  className: "bg-green-500 text-white [&>div:last-child]:text-black",
+  toast("The Audit Was Requested",{
+   description: <span style={{ color: "black" }}>You will receive your audit report within 24 hours</span>, 
+    
   action: {
     label: "Close",
     onClick: () => console.log("Undo"),

@@ -136,10 +136,10 @@ export default function CyberCleanLanding() {
   </div>
   
   {/* Circular Logo positioned closer to the left */}
-  <div className="absolute right-20 md:right-32 lg:right-48 top-1/2 transform -translate-y-1/2 hidden md:block">
-    <div className="bg-white/10 backdrop-blur-lg rounded-full p-4 shadow-2xl animate-float">
+  <div className="absolute right-20 md:right-32 lg:right-48 top-1/2 transform -translate-y-1/2 hidden md:block  ">
+    <div className="bg-white/10 backdrop-blur-lg rounded-full p-4  animate-float shadow-[0px_0px_55px_6px_rgba(0,0,0,0.65)]">
       {/* Circular logo container */}
-      <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden bg-[#47348D] shadow-inner">
+      <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden bg-[#47348D] shadow-inner ">
         <Image 
           src="/images/Logo Comp.png" 
           width={280} 
