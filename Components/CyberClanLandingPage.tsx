@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { CyberCleanLogo } from '@/Components/CyberCleanLogo';
 import Image from 'next/image';
+import { link } from 'fs';
 export default function CyberCleanLanding() {
   const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
   const router = useRouter();
@@ -273,22 +274,29 @@ export default function CyberCleanLanding() {
                   name: "Cyber Refresh", 
                   price: "49", 
                   features: ["Wi-Fi audit", "Password check", "PDF risk report"],
-                  highlight: false
+                  highlight: false,
+                  link1:'https://buy.stripe.com/dRm8wOgZn9YMfoi8y60RG02',
                 },
                 { 
                   name: "Cyber Shield", 
-                  price: "69", 
+                  price: "89", 
                   features: ["Everything in to Refresh", "Phishing test", "GDPR guidance"],
-                  highlight: true
+                  highlight: true,
+                  link1:'https://buy.stripe.com/aFa4gy6kJ2wk2Bw15E0RG01',
+
                 },
                 { 
                   name: "Cyber Guardian", 
                   price: "149", 
                   features: ["Everything in Shield", "Staff training templates", "24/7 support via live chat/phone attacks"],
-                  highlight: false
+                  highlight: false,
+                  link1:'https://buy.stripe.com/00wfZg6kJgna8ZUdSq0RG00',
                 }
               ].map((plan, index) => (
-                <div key={index} className="w-full md:w-1/3 px-4 mb-8">
+              
+              <div key={index} className="w-full md:w-1/3 px-4 mb-8">
+                  
+                  <Link href={plan.link1} >
                   <div
                     id={`plan-card-${index}`}
                     className={`bg-white rounded-lg shadow-lg p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl animate-on-scroll opacity-0 h-full flex flex-col ${
@@ -311,6 +319,7 @@ export default function CyberCleanLanding() {
                       ))}
                     </ul>
                   </div>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -390,7 +399,7 @@ export default function CyberCleanLanding() {
               <div className="flex space-x-6 mb-4 md:mb-0">
              <Link href={"/PrivacyPolicy"}className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Privacy Policy & Terms</Link>
                 {/* <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Terms</a> */}
-                <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Contact Us @ <span className='text-purple-500'>debobroto@cybercleantech.com</span></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=debobroto@cybercleantech.com" target='_blank'  className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Contact Us @ <span className='text-purple-500'>debobroto@cybercleantech.com</span></a>
               </div>
              <Link href={"/Audit"}>
             
