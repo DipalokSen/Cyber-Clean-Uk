@@ -16,6 +16,9 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "Cyber Clean",
   description: "Protecting Your Digital World",
+  icons: {
+    icon: "/faviIcon.ico", // put favicon.png in public/
+  },
 };
 
 export default function RootLayout({
