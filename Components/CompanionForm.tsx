@@ -362,7 +362,7 @@ const CompanionForm = () => {
             // First, save to database
             const insertResult = await createCompanion(values);
             if (!insertResult) {
-                alert('Failed to create companion. Please try again.');
+                alert('There Was an Error.Please try again.');
                 return;
             }
 

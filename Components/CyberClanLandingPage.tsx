@@ -388,8 +388,8 @@ export default function CyberCleanLanding() {
                 <p className="text-sm">CyberClean © 2025</p>
               </div>
               <div className="flex space-x-6 mb-4 md:mb-0">
-                <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Privacy Policy</a>
-                <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Terms</a>
+             <Link href={"/PrivacyPolicy"}className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Privacy Policy & Terms</Link>
+                {/* <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Terms</a> */}
                 <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Contact Us @ <span className='text-purple-500'>debobroto@cybercleantech.com</span></a>
               </div>
              <Link href={"/Audit"}>
