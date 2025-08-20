@@ -9,8 +9,9 @@ interface CreateCompanion {
 
            Fullname: string,
             BusinessName: string,
-            Website_Url: string,
+            Website_Url?: string,
             Email: string,
-            TypeOfBusiness: string
+            TypeOfBusiness: string,
+            ContactNumber:string
 }
 
