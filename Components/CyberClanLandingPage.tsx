@@ -165,7 +165,7 @@ export default function CyberCleanLanding() {
         { 
           icon: Users, 
           title: "Free Audit", 
-          desc: "We check your setup meticulously— Wi-Fi, email devices, staff practices.", 
+          desc: "We check your setup remotely: Wi‑Fi, email, devices, staff practices", 
           url: "/FreeAuditC",
           color: "from-purple-500 to-pink-500",
           iconBg: "bg-purple-100",
@@ -185,7 +185,7 @@ export default function CyberCleanLanding() {
         { 
           icon: Shield, 
           title: "Clean-Up Plan", 
-          desc: "We help you apply the hotfixes and keep your business safe every month.", 
+          desc: "We apply the fixes and keep you safe every month", 
           url: "/cleanup-plan",
           color: "from-green-500 to-teal-500",
           iconBg: "bg-green-100",
@@ -195,7 +195,7 @@ export default function CyberCleanLanding() {
         { 
           icon: Headphones, 
           title: "Ongoing Support", 
-          desc: "No re-port fee, keep at tech—Text, Chat, simple digital hygiene—delivered monthly.", 
+          desc: "No jargon. Just simple, monthly digital hygiene", 
           url: "/ongoing-support",
           color: "from-orange-500 to-red-500",
           iconBg: "bg-orange-100",
@@ -280,7 +280,7 @@ export default function CyberCleanLanding() {
                 { 
                   name: "Cyber Shield", 
                   price: "89", 
-                  features: ["Everything in to Refresh", "Phishing test", "GDPR guidance"],
+                  features: ["Everything in Refresh", "Phishing test", "GDPR guidance"],
                   highlight: true,
                   link1:'https://buy.stripe.com/aFa4gy6kJ2wk2Bw15E0RG01',
 
@@ -288,7 +288,7 @@ export default function CyberCleanLanding() {
                 { 
                   name: "Cyber Guardian", 
                   price: "149", 
-                  features: ["Everything in Shield", "Staff training templates", "24/7 support via live chat/phone attacks"],
+                  features: ["Everything in Shield", "Staff training templates", "24/7 support hotline","Simulated attacks"],
                   highlight: false,
                   link1:'https://buy.stripe.com/00wfZg6kJgna8ZUdSq0RG00',
                 }
@@ -400,6 +400,8 @@ export default function CyberCleanLanding() {
              <Link href={"/PrivacyPolicy"}className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Privacy Policy & Terms</Link>
                 {/* <a href="#" className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Terms</a> */}
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=debobroto@cybercleantech.com" target='_blank'  className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Contact Us @ <span className='text-purple-500'>debobroto@cybercleantech.com</span></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=debobroto@cybercleantech.com" target='_blank'  className="text-sm hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block">Phone:<span className=''>+447424785987</span></a>
+
               </div>
              <Link href={"/Audit"}>
             
